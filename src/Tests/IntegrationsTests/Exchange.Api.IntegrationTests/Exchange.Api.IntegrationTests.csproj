@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+
+        <IsPackable>false</IsPackable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="MartinCostello.Logging.XUnit" Version="0.1.0" />
+        <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.2.0" />
+        <PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="3.1.6" />
+        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.6.1" />
+        <PackageReference Include="xunit" Version="2.4.1" />
+        <PackageReference Include="xunit.runner.visualstudio" Version="2.4.2" />
+        <PackageReference Include="coverlet.collector" Version="1.3.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\..\..\Api\Exchange.Api\Exchange.Api.csproj" />
+        <ProjectReference Include="..\..\..\Mocks\Exchange.Mock\Exchange.Mock.csproj" />
+    </ItemGroup>
+
+</Project>
